@@ -6,4 +6,4 @@ rvm:
 # https://docs.travis-ci.com/user/languages/ruby
 
 after_success:
-  - bash <(curl -s https://test.duckbuild.io/ci/travis/scripts/upload)
+  - bash <(curl -s https://copilot-test.blackducksoftware.com/ci/travis/scripts/upload)
