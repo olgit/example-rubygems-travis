@@ -1,3 +1,9 @@
 language: ruby
 rvm:
   - 2.4.1
+
+# If your build needs more advanced behavior, see detailed Travis CI instructions:
+# https://docs.travis-ci.com/user/languages/ruby
+
+after_success:
+  - bash <(curl -s https://copilot-test.blackducksoftware.com/ci/travis/scripts/upload)
